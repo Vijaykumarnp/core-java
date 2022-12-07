@@ -50,6 +50,33 @@ class Zomato{
 		 return 0.0;
 		 
 		 }
+		 
+		 public static double findItem(String item , int quantity){
+			  if (item ==  "Biriyani"){
+		 
+		   return 225.00*quantity ;
+			 
+			 
+		 }
+		 if(item == "maggie"){
+			  
+			 return 45.00 * quantity ; 
+			 
+		 }
+		 if(item == "parota"){
+			 
+			 return 30 * quantity ;
+		 }
+		 if(item == "Shawarma"){
+			 return 40 * quantity ;
+		 }
+		 else{
+			 System.out.println("the item not found");
+			 
+		 }
+		 return 0.0 ;
+		 }
+		 
    
    
    
