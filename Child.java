@@ -1,7 +1,0 @@
-class Child extends Parent{
-
-
-
-
-
-}
