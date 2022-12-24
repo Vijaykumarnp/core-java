@@ -1,5 +1,0 @@
-class Cello extends Pen{
-
-
-
-}
