@@ -4,11 +4,12 @@ import com.panasonic.application.chips.Chip;
 
 public class Tv {
 
-	Chip chip[] = new Chip[2];
+	Chip chip[];
 	int ind;
 	
-	public Tv() {
+	public Tv(int size) {
 		System.out.println("the tv object is created");
+		chip = new Chip[size];
 	}
 	
 	public String addChips(Chip chip) {
