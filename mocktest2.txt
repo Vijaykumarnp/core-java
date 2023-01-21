@@ -1,0 +1,55 @@
+1)   this -- it is a key word which segrigate the instance & parameterized variables 
+             it point out the current object ,  pointiong towards instance variables
+             
+     super -- it is a key word which is used to call the base class method in  derived class
+              it donesnot have limitations to define , if we doesnot metion it java compiler will take the parametrized or local variable
+              
+
+     this() -- it is a method used to define the current method of parent class
+            
+     super() -- it is a method used to call constructor of parent class, it must be define in first statment of the constructor
+                if we doesnot mention the super method java compiler will directly point out the default constructor of parent class
+              
+     scp -- string constant pool it is a part of heap area  , it store the constants only , it stores the objects creating through literals  
+
+
+2)   object oriented programing is nothing but the structure to write a programe , meanwhile we can create object using this concepts
+      inheritance , polymorphism , encapsulation , abstraction 
+
+
+3)   extends --  it is a keyword  ,  by using this keyword we can achive inheritance  , it transfer all the states and variables of one class to another class 
+                  it is used between two classes
+     implements -  it is a keyword used to achive abstraction , it transfer a state of an interface to clas with some implimentations 
+                   it is used between class and interface
+
+4) * when we use the primitive datatypes it is not purely object orintend 
+   *we must write the program with that structure only
+
+
+6) polymorphism -- an object is behavioring diffrently  in a given instance of time ,  we can also  call the method of child class by createing object child class of refrence 
+                   of parent  class it also known as up casting 
+
+
+9) class -- it is keyword , it is a blue print to create objects , it consist of states & behaviours , it create only once , it cannot occupy memory ,  it can call many times 
+   object -- it is instance of a class , it is to create multiple classes , it can be created n number of times , it ocuupy heap memory , it can be call of once for an object
+
+10) no memory is ocuupys for class
+11) two types of constructor
+     1. default constructor - the constructor with no parameters is calles default constructor
+     2.  parametrized constructor -- the constructor with parameter is called parameterized constructor
+
+12) no we cannot run java application without oops concept because every class is inherited with the root class (object class)
+
+
+13) consider a raw material  of iron initialy it dont no what it be done it is nothing but interface  , later it can we converted into a tool  
+      then it is a abstraction class  , the method without body is called abstrct method ,  inerface makes some implimentations in a class is called abstraction
+
+14) runtime polymorphism -- the method call is decided at run time is called run time polymorphism ,  we can achvie runtime polymorphism by method overiding , 
+                             it must need two clases
+    compile time polymophism  -- the method call is decided at compile time is called compile time polymorphism ,  we can achive it by method overloading , 
+
+15) primitive(int , byte , short , char , boolean , float , double , long) & nonprimitive(class , System ,  string etc) 
+
+16)
+
+ 
