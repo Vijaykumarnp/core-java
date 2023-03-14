@@ -1,5 +1,7 @@
 package com.xworkz.application;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 import com.xworkz.application.constants.Gender;
@@ -10,31 +12,33 @@ public class DelieryService {
 
 	
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
 		DeliveryImpl impl = new DeliveryImpl();
+		try {
+		BufferedReader h = new BufferedReader(new InputStreamReader(System.in));
+		
 		System.out.println("enter the size");
-		int size = sc.nextInt();
+		int size = Integer.parseInt(h.readLine());
 		for (int i = 0; i < size; i++) {
 			DeliveryBoyDTO dtos = new DeliveryBoyDTO();
 			System.out.println("enter the name of deliery boy");
-			dtos.setName(sc.next()); 
+			dtos.setName(h.readLine()); 
 			System.out.println("enter the age of boy");
-			dtos.setAge(sc.nextInt());
+			dtos.setAge(Integer.parseInt(h.readLine()));
 			System.out.println("enter the vehicle numer");
-			dtos.setVehichleNumber(sc.next());
+			dtos.setVehichleNumber(h.readLine());
 			System.out.println("enter the contact number");
-			dtos.setContact(sc.nextLong());
+			dtos.setContact(Long.parseLong(h.readLine()));
 			System.out.println("enter the ");
-			dtos.setGender(Gender.valueOf(sc.next()));
+			dtos.setGender(Gender.valueOf(h.readLine()));
 			
-			try {
+			
 				impl.saveBoys(dtos);
+		}
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}	
-		}
+	
 		
 		try {
 			impl.getAllBoys();

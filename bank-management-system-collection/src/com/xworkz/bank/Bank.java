@@ -8,7 +8,7 @@ public interface Bank {
 
 	public void saveCustomer(CustomerDTO dto)  throws Exception;
 	public List getCustomer()  throws Exception;
-	
+	public List getCustomerByNamae(String name);
 	
 	
 }

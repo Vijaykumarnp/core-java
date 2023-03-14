@@ -10,6 +10,8 @@ import com.xworkz.dto.CustomerDTO;
 public class BankImpl  implements Bank {
 
 	
+	CustomerDTO dtos = new CustomerDTO();
+	
 	  List<CustomerDTO> lis = new ArrayList<CustomerDTO>();
 	@Override
 	public void saveCustomer(CustomerDTO dto) throws Exception {
@@ -29,6 +31,23 @@ public class BankImpl  implements Bank {
 		}
 		
 		return lis;
+	}
+
+	@Override
+	public List getCustomerByNamae(String name) {
+		
+		if(dtos.getCusName() == name) {
+		
+		}
+		Collections.sort(lis);
+		Iterator<CustomerDTO> itr = lis.iterator();
+		
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
+		
+		return null;
 	}
 	
 }
