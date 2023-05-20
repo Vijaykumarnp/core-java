@@ -1,0 +1,223 @@
+
+
+
+   1. HTML -- it is an hyper text markup languague use to cretae web applications
+   
+   2.Attribute is the one which is used inside the tag it provides additional information to that tag
+   
+   3. <html>
+   <head>
+   <title></title>
+   </head>
+   
+   <body></body>
+   
+   
+   
+   
+   </html>
+   
+   4.<image src="/image url">
+   
+   5.<a href="url" ></a>
+   
+   6.<html>
+   <head>
+   <title></title>
+   </head>
+   
+   <body>
+   <tr>
+   <th>sl.no</th>
+   <th>Name</th>
+   <th>Age</th>
+   
+   </tr>
+   
+   <tr>
+   <td>1</td>
+   <td>Vijay</td>
+   <td>23</th>
+   
+   </tr>
+   
+   </body>
+   
+   </html>
+   
+   7.<html>
+   <head>
+   <title></title>
+   </head>
+   
+   <body>
+   
+   <form class="container">
+   <label>Name</label>
+   <input type="text" name="name" class="form-control">
+    
+	<label>Password</label>
+	<input type="password" name = "password">
+
+     <label>Gender</label>
+     <input type="radio" name="Gender">Male
+	 <input type="radio" name="Gender">Female
+	 <input typ="radio" name="Gender">Others
+	 
+	 <label>City</label>
+	<select>
+	<option>Banglore</option>
+	<option>manglore</option>
+	<option>Hassan</option>
+	
+	
+	</select>
+	
+	<label>DOB</label>
+	<input type="Date">
+	
+   </form>
+   
+   
+   </body>
+   
+   
+   
+   
+   </html>
+   
+   8. css -- it is a cascading style sheet used to gives the position , color and others valuable information for html
+
+      <html>
+   <head>
+   <title></title>
+   <style>
+   
+   </style>
+   
+   
+   
+   </head>
+   
+   <body></body>
+   
+   
+   
+   
+   </html>
+        
+   
+   
+   9.external css can be achived by link tag and it can be used for many html codes
+   
+   10. element selector -- for a single tag
+   
+        group selector --  for 2 or more tag
+		class selector --  it was specified by class
+		
+		id selector --  it was specified by id
+		
+		
+		11. content -- it consist of text and images
+		
+		     padding  --  it gives the space for content 
+			 margin -- it contains padding and content
+			 
+			 Border -- it consist of padding and margin it gives outerline for content
+			 
+			 div{
+			 
+			 padding : 5px 10px 5px 10px;
+			 margin : 5px;
+			 border : 10%;
+			 
+			 
+			 }
+			 
+			 
+			 
+	12.  <img src="/link" class="img">
+	     <div class="corner">Vijay</div>
+   
+         .img{
+		 margin:10%;
+		 text-align : center;
+		 
+		 
+		 }
+		 
+		 .corner{
+		 margin:0px;
+		 text-align:corner;
+		 
+		 }
+           
+   13. JavaScript is a scripting language that enables you to create
+   dynamically updating content, control multimedia, animate images
+   
+   <html>
+   <head>
+   <title></title>
+   <script>
+   
+   </script>
+   
+   
+   </head>
+   
+   <body>
+   
+   </body>
+   
+   
+   
+   
+   </html>
+   
+   
+   
+   14.
+   
+   function register(){
+   var name = documnet.getElementbyid("name")
+   console.log(name)
+   console.log(name.value)
+   
+   if(name.value == ''){
+   var nameMessage = documnet.getElementbyid("nameMessage")
+   nameMessage.innerHtml = 'please fill the above block'
+   nameMessage.style.color = 'red'
+   
+   }
+   
+   
+   
+   }
+   
+   
+   
+   <form class="registerd">
+   <div>
+   <label>Name</label>
+   <input type="text" name = "name" id="name">  
+<span id="nameMessage"></span>   
+   </div>
+   
+   <div>
+   <button type="button" onclick="register()">Register</button>
+   </div>
+   </form>
+
+
+
+   
+  
+  
+  
+  
+  let --  we cannot redeclare , but we can update
+  var -- we can redeclare as well as update
+  const --  we cannot redeclare and update
+  
+  
+  
